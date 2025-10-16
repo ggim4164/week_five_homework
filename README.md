@@ -8,6 +8,7 @@
 (c) 상태미분방정식을 구하시오.
 
 *풀이과정*
+
 $$
 F(t) = M \frac{d^2 y(t)}{dt^2} + b \frac{d y(t)}{dt} + ky(t)
 $$
@@ -489,18 +490,15 @@ $\text{adj}(sI - A)$를 구해보면
 
 $$
 \mathrm{adj}(sI - A) =
-\begin{bmatrix}
+\left[
+\begin{array}{ccc}
 s^2 - 13s + 30 & 4s - 40 & -2s + 10 \\
 s - 11 & s^2 - 11s + 8 & s - 3 \\
 -s + 3 & -4 & s^2 - 4s - 1
-\end{bmatrix}^T
-=
-\begin{bmatrix}
-s^2 - 13s + 30 & s - 11 & -s + 3 \\
-4s - 40 & s^2 - 11s + 8 & -4 \\
--2s + 10 & s - 3 & s^2 - 4s - 1
-\end{bmatrix}
+\end{array}
+\right]^T
 $$
+
 
 따라서 $(sI - A)^{-1}$ 은 다음과 같다.
 
